@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-gray-100 font-sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply tracking-tight;
+}
+
+.container {
+  @apply max-w-7xl;
+}
+
+/* Custom scrollbar for a more modern look - optional */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a202c; /* Cor de fundo da trilha da scrollbar (cinza escuro) */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #581c87; /* Cor da barra de rolagem (roxo escuro, combinando com a paleta) */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7e22ce; /* Cor da barra de rolagem ao passar o mouse (roxo mais claro) */
+}
+
+/* Estilos para gradientes de texto, se não forem aplicados diretamente nos componentes */
+.text-gradient-purple-pink-indigo {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400;
+}
+
+.text-gradient-purple-pink {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-300;
+}
+
+/* Adicionando um estilo base para links para garantir consistência se necessário */
+a {
+  @apply transition-colors duration-200;
+}
+
+/* Melhorando o foco para acessibilidade */
+*:focus-visible {
+  @apply outline-none ring-2 ring-offset-2 ring-offset-gray-900 ring-purple-500;
+}
+
