@@ -25,7 +25,7 @@ const HomePage = () => {
         <p className="max-w-3xl mx-auto text-lg text-gray-400 mb-12 px-4">
           Em um mundo inundado por informações rápidas e respostas superficiais, o Absolutamente Incerto é um convite à pausa, à reflexão profunda e à descoberta. Aqui, exploramos as fascinantes conexões entre filosofia, a ciência que desvenda nosso universo e nosso corpo, e o comportamento humano em sua essência. Se você anseia por um entendimento mais claro e integrado da vida, junte-se a nós nesta jornada de aprendizado e questionamento.
         </p>
-        <div className="space-y-4 md:space-y-0 md:space-x-6">
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 px-4">
           {/* Botões de navegação - Edite os textos para alterar */}
           <a href="https://absolutamenteincerto.vercel.app/projeto" className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105 shadow-lg">
             Explore Nossos Pilares
@@ -33,7 +33,7 @@ const HomePage = () => {
           <a href="https://absolutamenteincerto.vercel.app/sobre" className="inline-block bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105 shadow-lg">
             Conheça o Criador
           </a>
-          <a href="https://www.instagram.com/absolutamenteincerto/" target="_blank" rel="noopener noreferrer" className="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105 shadow-lg mt-4 md:mt-0">
+          <a href="https://www.instagram.com/absolutamenteincerto/" target="_blank" rel="noopener noreferrer" className="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-transform transform hover:scale-105 shadow-lg">
             Acompanhe nas Redes
           </a>
         </div>
